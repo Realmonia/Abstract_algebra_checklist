@@ -25,31 +25,56 @@
 \subsection{Monoid}
 \section{Ring-related}
 \subsection{Ring}
-\subsubsection{Definition 1}
-A nonempty set R with two operations *(usually written as addition and multiplication) that satisfy the
-following axioms. For $\forall a,b,c\in R$:\\
 \begin{enumerate}
-	\item If $a\in R$ and $b\in R$, then $a+b\in R$ (closure addition).
-	\item $a+(b+c)=(a+b)+c$ (Associative addition).
-	\item $a+b=b+a$ (Commutative addition).
-	\item There is an element $0_R$ in $R$ such that $a+0_R=a=0_R+a$ for every $a\in R$. (Additive identity or zero element).
-	\item For each $a\in R$, the equation $a+x=0_R$ has a solution in $R$.
-	\item
+	\item Definition 1\\
+	A nonempty set R with two operations *(usually written as addition and multiplication) that satisfy the
+	following axioms. For $\forall a,b,c\in R$:
+	\begin{enumerate}
+		\item If $a\in R$ and $b\in R$, then $a+b\in R$ (closure for addition).
+		\item $a+(b+c)=(a+b)+c$ (Associative addition).
+		\item $a+b=b+a$ (Commutative addition).
+		\item There is an element $0_R$ in $R$ such that $a+0_R=a=0_R+a$ for every $a\in R$. (Additive identity or zero element).
+		\item For each $a\in R$, the equation $a+x=0_R$ has a solution in $R$.
+		\item If $a\in R$ and $b\in R$, then $ab\in R$ (closure for multiplication).
+		\item $a(bc)=(ab)c$ (associative multiplication).
+		\item $a(b+c)=ab+ac$ and $(a+b)c=ac+bc$ (distributivity).
+	\end{enumerate}
+	\item Definition 2\\
+	A nonempty set R with addition and multiplication such that:
+	\begin{enumerate}
+		\item $(R,+)$ is an abelian group.
+		\item $(R,\cdot)$ is a semigroup.
+		\item $(R,+,\cdot)$ is distributive for addition and multiplication.
+	\end{enumerate}
+	\item Relative Extension
+	\begin{enumerate}
+		\item Commutative Ring: ring $R$ satisfies $ab=ba$ for $\forall a,b \in R$ (Commutative multiplication).
+		\item Ring with identity: ring $R$ that contains an element $1_R$ satisfying $a1_R=a=1_Ra$ for $\forall a\in R$ (multiplicative identity).
+	\end{enumerate}
 \end{enumerate}
-\subsubsection{Definition 2}
-A nonempty set R with addition and multiplication such that:\\
-\begin{enumerate}
-	\item $(R,+)$ is an abelian group.
-	\item $(R,\cdot)$ is a semigroup.
-	\item $(R,+,\cdot)$ is distributive for addition and multiplication.
-\end{enumerate}
-\subsubsection{Relative Extension}
-\begin{enumerate}
-	\item Commutative Ring: ring $R$ satisfies $ab=ba$ for $\forall a,b \in R$ (Commutative multiplication).
-	\item Ring with identity: ring $R$ that contains an element $1_R$ satisfying $a1_R=a=1_Ra$ for $\forall a\in R$ (multiplicative identity).
-\end{enumerate}
-\section{Field-related}
 
+
+\subsection{Subring}
+\begin{enumerate}
+	\item When a subset $S$ of a ring $R$ is itself a ring under the addition and multiplication in $R$, then we say that $S$ is a subring of $R$.
+	\item $R$ is a ring and $S$ is a subset of $R$ such that
+	\begin{enumerate}
+		\item S is closure under addition and multiplication.
+		\item $0_R\in S$.
+		\item If $a\in S$ then the solution of the equation $a+x=0_R$ in $S$ (addition inverse exists).
+	\end{enumerate}
+	Then $S$ is a subring of $R$.
+\end{enumerate}
+
+\subsection{Integral Domain}
+An integral domain is a commutative ring $R$ with identity $1_R\neq 0_R$ such that:
+
+whenever $a,b\in R$ and $ab=0_R$ then $a=0_R$ or $b=0_R$.	
+\section{Field-related}
+\subsection{Field}
+A field is a commutative ring $R$ with identity $1_R\neq 0_R$ such that:
+
+For each $a\neq 0_R$ in $R$, the equation $ax=1_R$ has a solution in $R$. 
 \section{Others}
 \begin{enumerate}
     \item 
