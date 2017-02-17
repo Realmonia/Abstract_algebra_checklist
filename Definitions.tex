@@ -1,0 +1,58 @@
+\documentclass[letter]{article} 
+\usepackage{amsmath, amsthm, amssymb, amsfonts, geometry, import, mathrsfs, multirow, algorithm2e, gauss, tikz}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\newenvironment{solution}
+	{\renewcommand\qedsymbol{$\square$}\begin{proof}[Solution]}
+	{\end{proof}}
+\author{Heming Han a.k.a. RealMonia} 
+\title{\bf Abstract Algebra Definitions Checklist} 
+\date{\today}
+\begin{document}
+\maketitle
+\section{Basic}
+\subsection{Properties for operations}
+\begin{enumerate}
+    \item Closure.
+    \item Associative.
+    \item Commutative.
+    \item Unital (existence of identity)
+    \item Distributive.
+    \item Invertible.
+\end{enumerate}
+\section{Group-related}
+\subsection{Group}
+\subsection{Semi-group}
+\subsection{Monoid}
+\section{Ring-related}
+\subsection{Ring}
+\subsubsection{Definition 1}
+A nonempty set R with two operations *(usually written as addition and multiplication) that satisfy the
+following axioms. For $\forall a,b,c\in R$:\\
+\begin{enumerate}
+	\item If $a\in R$ and $b\in R$, then $a+b\in R$ (closure addition).
+	\item $a+(b+c)=(a+b)+c$ (Associative addition).
+	\item $a+b=b+a$ (Commutative addition).
+	\item There is an element $0_R$ in $R$ such that $a+0_R=a=0_R+a$ for every $a\in R$. (Additive identity or zero element).
+	\item For each $a\in R$, the equation $a+x=0_R$ has a solution in $R$.
+	\item
+\end{enumerate}
+\subsubsection{Definition 2}
+A nonempty set R with addition and multiplication such that:\\
+\begin{enumerate}
+	\item $(R,+)$ is an abelian group.
+	\item $(R,\cdot)$ is a semigroup.
+	\item $(R,+,\cdot)$ is distributive for addition and multiplication.
+\end{enumerate}
+\subsubsection{Relative Extension}
+\begin{enumerate}
+	\item Commutative Ring: ring $R$ satisfies $ab=ba$ for $\forall a,b \in R$ (Commutative multiplication).
+	\item Ring with identity: ring $R$ that contains an element $1_R$ satisfying $a1_R=a=1_Ra$ for $\forall a\in R$ (multiplicative identity).
+\end{enumerate}
+\section{Field-related}
+
+\section{Others}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\end{document}
